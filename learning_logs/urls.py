@@ -6,5 +6,7 @@ from . import views
 
 urlpatterns = [
         # Домашняя страница
-        path('', views.index, name='index')
+        path('', views.index, name='index'),
+        # Вывод всех тем
+        path('topics/', views.topics, name='topics')
 ]
