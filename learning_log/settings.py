@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3e8c+l@(r@dx+9rb$@w=2ish=vgc5dg==koa%e@xp#6izh02ia
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['learn-tracker.herokuapp.com']
+ALLOWED_HOSTS = ['learn-tracker.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'learning_log/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
