@@ -10,7 +10,7 @@
   <form action="{% url 'new_topic' %}" method="post" class="form">
     {% csrf_token %}
     {% bootstrap_form form %}
-
+    
     {% buttons %}
       <button name="sumbit" class="btn btn-primary">add topic</button>
     {% endbuttons %}
